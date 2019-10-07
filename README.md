@@ -19,6 +19,6 @@ It is a spline interpolation to evaluate the image at continuous locations. An a
 
 Some visual results:
 <p float="center">
-  <img src="https://github.com/vinits5/lucas_kanade_template_tracking/blob/master/result/original_image.jpg" />
-  <img src="https://github.com/vinits5/lucas_kanade_template_tracking/blob/master/result/interpolated_image.jpg" /> 
+	<img src="https://github.com/vinits5/lucas_kanade_template_tracking/blob/master/result/original_image.jpg" width="640" height="480" />
+	<img src="https://github.com/vinits5/lucas_kanade_template_tracking/blob/master/result/interpolated_image.jpg" width="640" height="480" /> 
 </p>
