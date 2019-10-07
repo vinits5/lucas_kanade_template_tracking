@@ -7,7 +7,7 @@
 ```python
 frames = np.load(path)
 ```
-Provide the dataset path!\
+Provide the dataset "path"!
 
 `python test.py`
 
