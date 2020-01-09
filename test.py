@@ -3,6 +3,7 @@ sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
 import cv2
 import numpy as np
 from LucasKanade import *
+import os
 
 def drawRectangle(img, xi, yi, size_x, size_y):
 	return cv2.rectangle(img, (yi, xi), (yi+size_y, xi+size_x), (0,0,255), 2)
@@ -43,7 +44,10 @@ def main(frames, rect):
 	return None
 
 if __name__ == '__main__':
-	frames = np.load('data/data/carseq.npy')
+	if not os.path.isfile('data/carseq.npy'):
+		if os.path.isfile('data/data.zip'):
+			os.system('unzip data/data.zip -d data/')
+	frames = np.load('data/carseq.npy')
 	# rect = [59, 116, 145, 151]
 	rect = find_bb(frames[:,:,0])
 	# rectList = []
